@@ -1,0 +1,57 @@
+:root{
+    /*Colores*/
+    --background-color: #080F28;
+    --primary-text-color: #fff;
+    --primary-color: #F47521;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+
+.header .nav-container{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+
+.header .nav-container .nav-logo-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.header .nav-container .nav-user-container{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 24px;
+}
+
+.header .nav-container .nav-user-container .nav-user--menu{
+    width: 203px;
+    display: flex;
+    background: #FFFFFF;
+    opacity: 0.3;
+    filter: blur(1px);
+    border-radius: 4px;
+    padding: 11px 12px;
+}
+
