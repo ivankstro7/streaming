@@ -117,7 +117,7 @@ html{
     text-decoration: none;
 }
 
-.header .nav-container:hover ul, ul:hover{
+.header .nav-user-container:hover ul, ul:hover{
     display: block;
 }
 
@@ -129,19 +129,16 @@ html{
 .main-container{
     background-color: var(--background-color);
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
-.main-movie-container{
-    width: 100%;
-}
 
 .main-movie-container {
-    position: absolute;
     display: flex;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 615px;
+    margin: -70px auto 0;
     background-image: url(/assets/series/portada-broly.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,11 +176,30 @@ html{
 
 .main-movie-container .movie-container--detail{
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .main-movie-container .movie-container--detail span{
+    background-image: url(/assets/icons/star.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-right: 2.4rem;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
 }
+
+.main-movie-container .movie-container--detail span p{
+    color: #CFA613;
+    margin: 0 32px 0;
+}
+
+.main-movie-container .movie-container--detail p{
+    margin-left: 40px;
+}
+
 
 .main-movie-container .main-movie-container--title p{
     font-size: 1.6rem;
@@ -241,5 +257,49 @@ html{
     height: 416px;
 }
 
-
 /*banner*/
+
+/*buscador*/
+
+.main-container .search-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.main-container .search-container h2{
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 4.0rem;
+    margin-bottom: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-container .search-container .search-container--input{
+    width: 561px;
+    height: 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px #090F25;
+    border-radius: 22px;
+}
+
+.main-container .search-container .search-container--input span{
+    
+}
+
+.main-container .search-container .search-container--input input{
+    width: 561px;
+    height: 44px;
+    border: none;
+    outline: none;
+    border-radius: 22px;
+}
+
+
+
+
+/*buscador*/
