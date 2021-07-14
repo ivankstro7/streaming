@@ -29,6 +29,7 @@ html{
     width: 100%;
     height: 70px;
     display: flex;
+    padding: 6px 0;
 }
 
 .header .nav-container .nav-logo-container{
@@ -41,9 +42,10 @@ html{
 .header .nav-container .nav-user-container{
     width: 50%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
+    flex-direction: column;
     padding-right: 24px;
+    position: relative;
 }
 
 .header .nav-container .nav-user-container .nav-user--menu{
@@ -54,6 +56,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 11px 12px;
+    cursor: pointer;
 }
 
 .header .nav-container .nav-user-container .nav-user--menu img{
@@ -86,6 +89,38 @@ html{
 .header .nav-container .nav-user-container .nav-user--menu .arrow-list img{
     margin-left: 12px;
 }
+
+.header .nav-container ul{
+    display: none;
+    position: absolute;
+    top: 64px;
+    background-color: #fff;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 16px 24px;
+    border-radius: 4px;
+    list-style: none;
+    width: 203px;
+}
+
+.header .nav-container ul li{
+    margin-bottom: 8px;
+}
+
+
+.header .nav-container ul li:last-child{
+    margin-bottom: 0;
+}
+
+.header .nav-container ul li a{
+    font-size: 1.4rem;
+    color: #707070;
+    text-decoration: none;
+}
+
+.header .nav-container:hover ul, ul:hover{
+    display: block;
+}
+
 
 /*header*/
 
@@ -139,7 +174,15 @@ html{
     text-transform: uppercase;
     line-height: 3.8rem;
     color: #fff;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.main-movie-container .movie-container--detail{
+    display: flex;
+}
+
+.main-movie-container .movie-container--detail span{
+    margin-right: 2.4rem;
 }
 
 .main-movie-container .main-movie-container--title p{
@@ -185,6 +228,7 @@ html{
 }
 
 .main-movie-container .main-movie-container--portada{
+    position: relative;
     width: 50%;
     height: 100vh;
     display: flex;
