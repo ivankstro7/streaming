@@ -280,26 +280,103 @@ html{
 }
 
 .main-container .search-container .search-container--input{
-    width: 561px;
+    width: 43%;
     height: 44px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px #090F25;
     border-radius: 22px;
+    display: flex;
+    align-items: center;
+    padding: 0 19px 0;
+}
+
+.main-container .search-container .search-container--input:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
 }
 
 .main-container .search-container .search-container--input span{
-    
+    background-image: url(/assets/icons/search.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    cursor: pointer;
 }
 
 .main-container .search-container .search-container--input input{
-    width: 561px;
+    width: 43%;
     height: 44px;
     border: none;
     outline: none;
     border-radius: 22px;
+    font-family: 'Poppins', sans-serif;
 }
 
-
-
-
 /*buscador*/
+
+
+/*carousel*/
+
+.carousel{
+    width: 100%;
+    overflow: scroll;
+    padding-left: 70px;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.carousel h2{
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carousel h2::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 12px;
+    background-color: var(--primary-color);
+    top: 6px;
+    left: 60px;
+}
+
+.carousel .carousel--container{
+    white-space: nowrap;
+    margin: 32px 0;
+}
+
+.carousel .carousel--container .carousel--item{
+    border-radius: 8px;
+    width: 202px;
+    height: 292px;
+    display: inline-flex;
+    overflow: hidden;
+    margin-right: 24px;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+
+.carousel .carousel--container .carousel--item img{
+    width: 100%;
+}
+
+.carousel .carousel--container .carousel--item:hover ~ .carousel--item{
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel .carousel--container:hover .carousel--item{
+    opacity: 0.3;
+}
+
+.carousel .carousel--container:hover .carousel--item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    margin: 75px 0;
+}
+
+/*carousel*/
