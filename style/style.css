@@ -16,6 +16,8 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 
+/*header*/
+
 .header{
     width: 100%;
     height: 70px;
@@ -48,9 +50,54 @@ html{
 .header .nav-container .nav-user-container .nav-user--menu{
     width: 203px;
     display: flex;
-    background: #FFFFFF;
-    opacity: 0.3;
-    filter: blur(1px);
-    border-radius: 4px;
+    align-items: center;
+    background-image: url(/assets/icons/bg-blur.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 11px 12px;
 }
+
+.header .nav-container .nav-user-container .nav-user--menu img{
+    margin-right: 12px;
+}
+
+.header .nav-container .nav-user-container .nav-user--menu .user-menu--title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header .nav-container .nav-user-container .nav-user--menu .user-menu--title p{
+    font-size: 1.4rem;
+    color:#212021;
+    margin-right: 12px;
+    text-transform: uppercase;
+}
+
+.header .nav-container .nav-user-container .nav-user--menu .user-menu--title span{
+    width: 0.5px;
+    height: 26px;
+    background-color: #606060;    
+}
+
+.header .nav-container .nav-user-container .nav-user--menu .arrow-list{
+    display: flex;
+}
+
+.header .nav-container .nav-user-container .nav-user--menu .arrow-list img{
+    margin-left: 12px;
+}
+
+/*header*/
+
+/*banner*/
+
+.main-container{
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+/*banner*/
