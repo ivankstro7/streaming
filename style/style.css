@@ -56,9 +56,10 @@ html{
     height: 51px;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
-.header .nav-container .nav-user-dropdown .dropdown-content{
+.dropdown-content{
     display: none;
     position: absolute;
     width: 203px;
