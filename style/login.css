@@ -108,11 +108,16 @@ html{
     background-color: var(--primary-color);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
+}
+
+.login-container .login-container--form .button a{
     color: var(--primary-text-color);
     font-size: 1.6rem;
     line-height: 1.8rem;
-    cursor: pointer;
+    text-decoration: none;
 }
+    
 
 .login-container .login-container--register{
     font-size: 1.4rem;
