@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <title>Crunchyroll</title>
 </head>
@@ -12,15 +12,19 @@
     <header class="header"> 
         <nav class="nav-container">
             <section class="nav-logo-container">
-                <a href="index.html"><img src="/assets/icons/logo.svg" alt="Logo"></a>
+                <a href="./index.html"><img src="./assets/icons/logo.svg" alt="Logo"></a>
             </section>
-            <div class="nav-user-dropdown">                    
-                <button onclick="myFunction()" class="dropbtn">Ivankstro7</button>
+            <section class="nav-user-dropdown">
+                <div class="dropdown-container">
+                    <img src="./assets/icons/user.svg" alt="">                    
+                    <button onclick="myFunction()" class="dropbtn">Ivankstro7</button>
+                    <span></span>
+                </div>                
                 <div id="myDropdown" class="dropdown-content">
                     <a href="#">Cuenta</a>
-                    <a href="/login.html">Cerrar sesión</a>
+                    <a href="./login.html">Cerrar sesión</a>
                 </div>
-            </div>
+            </section>
         </nav>
     </header>
     <main class="main-container">
@@ -42,7 +46,7 @@
                 </div>                    
             </div>
             <div class="main-movie-container--portada">
-                <img src="/assets/series/portada.jpg" alt="">
+                <img src="./assets/series/portada.jpg" alt="">
             </div>
         </section>
         <section class="search-container">
@@ -52,32 +56,7 @@
                 <input type="text" placeholder="Busca tu serie favorita">
             </div>            
         </section>
-        <section class="main-container-carousel">
-            <div class="carousel">
-                <h2>Más populares</h2>
-                <div class="carousel--container">
-                    <div class="carousel--item"><img src="/assets/series/serie-1.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-2.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-3.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-4.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-5.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-6.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-7.jpg" alt=""></div>
-                </div>
-            </div>
-            <div class="carousel">
-                <h2>Nuevas</h2>
-                <div class="carousel--container">
-                    <div class="carousel--item"><img src="/assets/series/serie-8.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-9.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-10.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-11.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-12.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-13.jpg" alt=""></div>
-                    <div class="carousel--item"><img src="/assets/series/serie-14.jpg" alt=""></div>
-                </div>
-            </div>
-        </section>        
+                
     </main>
     <script type="text/javascript" src="./scritp.js"></script>
 </body>
